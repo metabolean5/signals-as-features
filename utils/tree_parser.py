@@ -72,10 +72,6 @@ def normalize_str(string: str) -> List[str]:
 # Generate abstract syntax tree from normalized input.
 def get_ast(input_norm: List[str]) -> List[Any]:
     ast = []
-    # Go through each element in the input:
-    # - if it is an open parenthesis, find matching parenthesis and make recursive
-    #   call for content in-between. Add the result as an element to the current list.
-    # - if it is an atom, just add it to the current list.
     i = 0
     while i < len(input_norm):
         symbol = input_norm[i]
