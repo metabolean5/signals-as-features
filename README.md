@@ -5,7 +5,7 @@ This repository contains scripts for processing and analyzing gold Rhetorical St
 ## 1. `tree_parser.py`
 
   - This script takes as input all the gold RST trees from the RST-DT corpus.
-  - It transforms the Lisp code representations of the trees into a top-down constituency parsing format.
+  - It transforms the Lisp code (.dis) representations of the trees into a top-down constituency parsing format.
   - Then, it performs preliminary discourse parsing evaluation using the outputs of the DMRST discourse parser.
 
 ## 2. `rst_signaling_parse.py`
